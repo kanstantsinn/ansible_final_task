@@ -1,0 +1,7 @@
+- name: number of requests from Firefox
+  hosts: localhost
+  vars:
+     contents: "{{ lookup('addtask', '/home/student/cm/ansible/addon/nginx') }}"
+  tasks:
+     - debug: msg="{{ contents }} requests from firefox"
+
